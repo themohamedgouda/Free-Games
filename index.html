@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Main Section -->
+    <section class="main" id="mainSection">
+        <!-- Header Section with Sticky Navbar -->
+        <div class="header py-5">
+            <nav class="navbar navbar-expand-lg bg-darkColor radius">
+                <div class="container">
+                    <!-- Logo and Brand -->
+                    <div class="d-flex align-items-center">
+                        <img src="./portfolio/logo-sm.png" width="50" alt="Logo">
+                        <a class="navbar-brand ms-2 text-white" href="#">GAME REVIEWS</a>
+                    </div>
+                    <!-- Toggle Button for Mobile View -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Navigation Links -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" data-category="mmorpg">MMORPG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-category="shooter">SHOOTER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-category="sailing">SAILING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-category="permadeath">PERMADEATH</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-category="superhero">SUPERHERO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Section to Display Games -->
+        <div class="container pt-5">
+            <div class="row g-4" id="games">
+                <div class="d-flex justify-content-center align-items-center vh-50">
+                    <span class="loader"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <!-- Section to Display Game Details -->
+        <div class="section game-details d-none" id="detailGame"></div>
+    </section>
+    <!-- Bootstrap JavaScript and Custom JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
